@@ -58,7 +58,10 @@ print(clean_rt)
 # only when there is a missing value (-1) in a list 
 # this statement should always generate a clean_rt list; if there's no missing
 # data clean_rt is set to the original rt list.   
-
+x = -1 
+if x==-1:
+	clean_rt_trouble = rt_trouble.remove(x)
+	print(rt_trouble)
 
 
 # for the last section, you will work with a list of lists:
