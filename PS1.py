@@ -66,19 +66,27 @@ if x==-1:
 	print(rt_trouble)
 
 # for the last section, you will work with a list of lists:
-rt_new = [400, 450, 500, 440, -1, 410, 570]
-trial_num = [1,2,3,4,5,6,7]
-accuracy = [0, 1, 0, 0, 1, 0]
-data = [rt_new, trial_num, accuracy]
-
-data = [rt_new.remove(-1),trial_num.remove(5)]
-data = [rt_new, trial_num, accuracy]
-print(data)
-
 # this master list combines information about each trial in an experiment,
 # where index 0 in each sublist refers to data from the first trial, etc.
 # using the same appraoches as above, find the trial with missing rt data
 # and remove it from all sublists in data 
 # be sure to only work with the master data list, to practice indexing 
 # lists of lists
+rt_new = [400, 450, 500, 440, -1, 410, 570]
+trial_num = [1,2,3,4,5,6,7]
+accuracy = [0, 1, 0, 0, 1, 0]
+data = [rt_new, trial_num, accuracy]
+
+# Evi's method:
+data = [rt_new.remove(-1),trial_num.remove(5)]
+data = [rt_new, trial_num, accuracy]
+print(data)
+
+# Yachen's method:
+missing = data[0].index(-1)
+del(data[0][missing])
+del(data[1][missing])
+print(data)      
+
+
 
