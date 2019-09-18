@@ -17,11 +17,12 @@ evi = 'hello world! python line’ + ‘ 1’
 print(evi)
 
 # second group member's error to fix
-coder2 = ‘hello world!” * 2.5
+yachen = ‘hello world!” * int(2.5)
+print(yachen)
 
 # now the second group member should define a variable with an error
 # and then commit and push changes to GitHub
-coder3 =
+coder3 = a + 'b' + 'c'
 
 # etc. until all group members have fixed and made 1 error
 
