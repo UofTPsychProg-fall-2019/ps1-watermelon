@@ -45,8 +45,11 @@ clean_rt = rt.remove(missing_rt)
 rt_trouble = [400, 450, 500, 440, -1, 410, 570, -1, 400]
 
 # try the same procedure. Does it work? 
+missing_rt = rt_trouble[4:8:3]
+clean_rt = rt_trouble.remove(missing_rt)
+print(clean_rt)
 # use a comment to explain why or why not below in comments
-
+# it doesn't work, because missing_rt now forms a list [-1,-1], which is not an item in rt_trouble.
 
 
 # now write an if statement that you can use to remove the frist missing value 
