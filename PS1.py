@@ -25,8 +25,13 @@ print(yachen)
 coder3 = a + 'b' + 'c'
 
 # etc. until all group members have fixed and made 1 error
+# From Jason - Was coder3 added by someone?
+# Jason to Fix code ... yachen = ‘hello world!” * int(2.5)
+yachen = "hello world!” * int(2.5)
+print(yachen)
 
-
+jason = ["j", "a", "s", "o", "n"}
+print(jason)
 
 #%%  Part 2  find and remove the invalid response______________________________
 
@@ -88,5 +93,5 @@ del(data[0][missing])
 del(data[1][missing])
 print(data)      
 
-
-
+# Jason's method:
+# Will be added shortly
