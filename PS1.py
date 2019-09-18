@@ -49,7 +49,9 @@ missing_rt = rt_trouble[4:8:3]
 clean_rt = rt_trouble.remove(missing_rt)
 print(clean_rt)
 # use a comment to explain why or why not below in comments
-# it doesn't work, because missing_rt now forms a list [-1,-1], which is not an item in rt_trouble.
+# it doesn't work, because missing_rt now forms a list [-1,-1], which is not an item in rt_trouble. and if you use the first method
+## clean_rt = rt_trouble.remove[missing_rt] it only removes the first missing item, not all of the missing items. Python sees it as
+### only removing one value at a time
 
 
 # now write an if statement that you can use to remove the frist missing value 
