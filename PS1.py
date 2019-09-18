@@ -48,10 +48,12 @@ rt_trouble = [400, 450, 500, 440, -1, 410, 570, -1, 400]
 missing_rt = rt_trouble[4:8:3]
 clean_rt = rt_trouble.remove(missing_rt)
 print(clean_rt)
+
 # use a comment to explain why or why not below in comments
-# it doesn't work, because missing_rt now forms a list [-1,-1], which is not an item in rt_trouble. and if you use the first method
-## clean_rt = rt_trouble.remove[missing_rt] it only removes the first missing item, not all of the missing items. Python sees it as
-### only removing one value at a time
+# it doesn't work, because missing_rt now forms a list [-1,-1], which is not an item in rt_trouble. 
+## if you use the first method ->
+### clean_rt = rt_trouble.remove[missing_rt] it only removes the first missing item, not all of the missing items. 
+#### Python sees it as only removing one value at a time
 
 
 # now write an if statement that you can use to remove the frist missing value 
@@ -63,12 +65,15 @@ if x==-1:
 	clean_rt_trouble = rt_trouble.remove(x)
 	print(rt_trouble)
 
-
 # for the last section, you will work with a list of lists:
 rt_new = [400, 450, 500, 440, -1, 410, 570]
 trial_num = [1,2,3,4,5,6,7]
 accuracy = [0, 1, 0, 0, 1, 0]
 data = [rt_new, trial_num, accuracy]
+
+data = [rt_new.remove(-1),trial_num.remove(5)]
+data = [rt_new, trial_num, accuracy]
+print(data)
 
 # this master list combines information about each trial in an experiment,
 # where index 0 in each sublist refers to data from the first trial, etc.
