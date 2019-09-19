@@ -30,8 +30,12 @@ coder3 = a + 'b' + 'c'
 yachen = "hello world!” * int(2.5)
 print(yachen)
 
-jason = ["j", "a", "s", "o", "n"}
+# Rachel fixing Jason's error
+jason = ["j", "a", "s", "o", "n"]
 print(jason)
+
+# Coder 4: define a variable with an error
+rachel = [psychology, 1, 4]
 
 #%%  Part 2  find and remove the invalid response______________________________
 
