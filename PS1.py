@@ -17,7 +17,7 @@ evi = 'hello world! python line’ + ‘ 1’
 print(evi)
 
 # second group member's error to fix
-yachen = ‘hello world!” * int(2.5)
+yachen = ‘hello world!' * int(2.5)
 print(yachen)
 
 # now the second group member should define a variable with an error
@@ -25,9 +25,9 @@ print(yachen)
 coder3 = a + 'b' + 'c'
 
 # etc. until all group members have fixed and made 1 error
-# From Jason - Was coder3 added by someone?
+# From Jason - Was coder3 added by someone? - Yes
 # Jason to Fix code ... yachen = ‘hello world!” * int(2.5)
-yachen = "hello world!” * int(2.5)
+yachen = "hello world!' * int(2.5)
 print(yachen)
 
 # Rachel fixing Jason's error
@@ -68,11 +68,20 @@ print(clean_rt)
 # now write an if statement that you can use to remove the frist missing value 
 # only when there is a missing value (-1) in a list 
 # this statement should always generate a clean_rt list; if there's no missing
-# data clean_rt is set to the original rt list.   
+# data clean_rt is set to the original rt list.  
+
+#Evi's method:
 x = -1 
 if x==-1:
 	clean_rt_trouble = rt_trouble.remove(x)
 	print(rt_trouble)
+	
+#Yachen's method:
+if -1 in rt_trouble:
+	clean_rt_trouble = rt_trouble.remove(-1)
+	print(rt_trouble)
+else:
+    print(rt_trouble)
 
 # for the last section, you will work with a list of lists:
 # this master list combines information about each trial in an experiment,
@@ -95,7 +104,13 @@ print(data)
 missing = data[0].index(-1)
 del(data[0][missing])
 del(data[1][missing])
-print(data)      
+print(data)     
+
+missing = data[0].index(-1)
+for x in data:
+    if x != data[-1]:
+        del(x[missing])
+print(data)
 
 # Jason's method:
 # Will be added shortly
