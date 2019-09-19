@@ -99,3 +99,7 @@ print(data)
 
 # Jason's method:
 # Will be added shortly
+
+# Rachel's method:
+remove = data[0].index(-1)
+# will also finish later (currently would use the same solution as Yachen but I'm looking up whether there is a more efficient way)
