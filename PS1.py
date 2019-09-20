@@ -26,9 +26,13 @@ coder3 = a + 'b' + 'c'
 
 # etc. until all group members have fixed and made 1 error
 # From Jason - Was coder3 added by someone? - Yes
-# Jason to Fix code ... yachen = ‘hello world!” * int(2.5)
-yachen = "hello world!' * int(2.5)
-print(yachen)
+# Jason to fix coder3
+coder3 = 'a' + 'b' + 'c'
+print(coder3)
+
+# If Jason to Fix code ... yachen = ‘hello world!” * int(2.5)
+# yachen = "hello world!' * int(2.5)
+# print(yachen)
 
 # Rachel fixing Jason's error
 jason = ["j", "a", "s", "o", "n"]
