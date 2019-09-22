@@ -38,8 +38,10 @@ print(coder3)
 jason = ["j", "a", "s", "o", "n"]
 print(jason)
 
-# Coder 4: define a variable with an error
-rachel = [psychology, 1, 4]
+# Joe fixing Rachel's error 
+# Original code: rachel = [psychology, 1,4]
+rachel = ['psychology', 1, 4]
+print(rachel)
 
 #%%  Part 2  find and remove the invalid response______________________________
 
@@ -122,3 +124,6 @@ print(data)
 # Rachel's method:
 remove = data[0].index(-1)
 # will also finish later (currently would use the same solution as Yachen but I'm looking up whether there is a more efficient way)
+
+#Joe's method:
+# Will be added shortly
