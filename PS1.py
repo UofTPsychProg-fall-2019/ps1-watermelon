@@ -102,4 +102,6 @@ print(data)
 
 # Rachel's method:
 remove = data[0].index(-1)
-# will also finish later (currently would use the same solution as Yachen but I'm looking up whether there is a more efficient way)
+for i in [0,1,2]:
+    del(data[i][remove])
+print(data)
