@@ -123,7 +123,7 @@ print(data)
 
 # Rachel's method:
 remove = data[0].index(-1)
-for i in [0,1,2]:
+for i in [0,1]:
     del(data[i][remove])
 print(data)
 
