@@ -5,6 +5,9 @@ Problem Set 1
 @author: katherineduncan
 """
 
+# Watermelon group: Final Submission
+# Rachel Forbes, Yachen Li, Jason Payne, Evi Myftaraj, Joe Hoang
+
 #%% Part 1: pass the error forward ____________________________________________
 # this should be completed one at a time to get practice using GitHub
 
