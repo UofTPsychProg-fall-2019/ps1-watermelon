@@ -65,14 +65,7 @@ print(clean_rt)
 # only when there is a missing value (-1) in a list 
 # this statement should always generate a clean_rt list; if there's no missing
 # data clean_rt is set to the original rt list.  
-
-#Evi's method:
-x = -1 
-if x==-1:
-	clean_rt_trouble = rt_trouble.remove(x)
-	print(rt_trouble)
 	
-#Yachen's method:
 if -1 in rt_trouble:
 	clean_rt_trouble = rt_trouble.remove(-1)
 	print(rt_trouble)
@@ -91,16 +84,15 @@ trial_num = [1,2,3,4,5,6,7]
 accuracy = [0, 1, 0, 0, 1, 0]
 data = [rt_new, trial_num, accuracy]
 
-# Evi's method:
-data = [rt_new.remove(-1),trial_num.remove(5)]
-data = [rt_new, trial_num, accuracy]
-print(data)
-
-# Yachen's method:
 missing = data[0].index(-1)
 del(data[0][missing])
 del(data[1][missing])
-print(data)     
+print(data)  
+
+# Other methods:
+data = [rt_new.remove(-1),trial_num.remove(5)]
+data = [rt_new, trial_num, accuracy]
+print(data)
 
 missing = data[0].index(-1)
 for x in data:
@@ -108,14 +100,8 @@ for x in data:
         del(x[missing])
 print(data)
 
-# Jason's method:
-# Will be added shortly
-
-# Rachel's method:
 remove = data[0].index(-1)
 for i in [0,1]:
     del(data[i][remove])
 print(data)
 
-#Joe's method:
-# Will be added shortly
