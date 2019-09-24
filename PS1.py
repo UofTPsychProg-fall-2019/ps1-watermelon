@@ -26,8 +26,8 @@ jason = 'a' + 'b' + 'c'
 print(jason)
 
 # Rachel fixing Jason's error
-jason = ["j", "a", "s", "o", "n"]
-print(jason)
+rachel = ["j", "a", "s", "o", "n"]
+print(rachel)
 
 # Joe fixing Rachel's error 
 # Original code: rachel = [psychology, 1,4]
