@@ -30,9 +30,8 @@ rachel = ["j", "a", "s", "o", "n"]
 print(rachel)
 
 # Joe fixing Rachel's error 
-# Original code: rachel = [psychology, 1,4]
-rachel = ['psychology', 1, 4]
-print(rachel)
+Joe = ['psychology', 1, 4]
+print(Joe)
 
 #%%  Part 2  find and remove the invalid response______________________________
 
